@@ -65,6 +65,12 @@
 
 ---
 
+## Demo
+
+https://github.com/user-attachments/assets/60a74df9-c1aa-40d0-a5c2-0e2a5063ae30
+
+---
+
 <a id="install"></a>
 
 ## Install
@@ -206,11 +212,11 @@ toast.loading('Uploading...') // gray, no auto-dismiss
 
 Nova Toast supports 3 theme modes:
 
-| Value | Behavior |
-|---|---|
-| `'auto'` | Follows the user's OS preference via `prefers-color-scheme` (default) |
-| `'light'` | Always light mode, ignores OS preference |
-| `'dark'` | Always dark mode, ignores OS preference |
+| Value     | Behavior                                                              |
+| --------- | --------------------------------------------------------------------- |
+| `'auto'`  | Follows the user's OS preference via `prefers-color-scheme` (default) |
+| `'light'` | Always light mode, ignores OS preference                              |
+| `'dark'`  | Always dark mode, ignores OS preference                               |
 
 ### Via props
 
@@ -709,30 +715,6 @@ interface Toast {
   action?: ToastAction
   render?: (toast: Toast, dismiss: () => void) => any
 }
-```
-
----
-
-<a id="project-structure"></a>
-
-## Project Structure
-
-```
-src/
-├── index.ts                     # Entry point (all exports)
-├── core/                        # Framework-agnostic core
-│   ├── types.ts                 # All TypeScript types
-│   ├── store.ts                 # Pub/sub reactive store (singleton)
-│   ├── toast.ts                 # Shorthand API (toast.success, etc.)
-│   └── styles/
-│       ├── colors.ts            # Theme colors (light/dark CSS variables)
-│       ├── positions.ts         # Position styles for 6 positions
-│       └── animations.ts        # Keyframe generators (slide/fade/pop/bounce)
-└── ui/                          # React rendering layer
-    ├── useStore.ts              # React hook (useSyncExternalStore)
-    ├── ToastContainer.tsx       # Root container + style injection
-    ├── ToastItem.tsx            # Individual toast card component
-    └── CloseButton.tsx          # Close button (inline SVG)
 ```
 
 ---
