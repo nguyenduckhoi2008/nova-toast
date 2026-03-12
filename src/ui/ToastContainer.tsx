@@ -77,7 +77,7 @@ export function ToastContainer(props: ToastContainerProps) {
         ${getKeyframes(config.animation, config.position)}
         @keyframes nova-toast-spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
         @keyframes nova-toast-progress { from{width:100%} to{width:0%} }
-        .nova-toast-close:hover { color: var(--nt-close-hover) !important; }
+        .nova-toast-close:hover { color: var(--nt-close-hover) !important; background: var(--nt-action-bg) !important; }
         @media(max-width:480px){
           .nova-toast-container {
             left:0!important; right:0!important;

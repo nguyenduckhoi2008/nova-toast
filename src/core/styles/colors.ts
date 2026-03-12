@@ -3,14 +3,16 @@
 
 export const THEME_VARS_CSS = `
   --nt-bg:             #ffffff;
-  --nt-fg:             #111111;
-  --nt-fg2:            #6b7280;
-  --nt-border:         rgba(0,0,0,0.08);
-  --nt-shadow:         0 4px 6px -1px rgba(0,0,0,0.08), 0 10px 32px -4px rgba(0,0,0,0.10);
-  --nt-close:          #9ca3af;
-  --nt-close-hover:    #374151;
-  --nt-action-bg:      rgba(0,0,0,0.04);
-  --nt-action-border:  rgba(0,0,0,0.10);
+  --nt-fg:             #0f172a;
+  --nt-fg2:            #64748b;
+  --nt-border:         rgba(15,23,42,0.08);
+  --nt-shadow:         0 1px 2px rgba(15,23,42,0.04),
+                       0 4px 8px -1px rgba(15,23,42,0.06),
+                       0 12px 36px -8px rgba(15,23,42,0.14);
+  --nt-close:          #94a3b8;
+  --nt-close-hover:    #1e293b;
+  --nt-action-bg:      rgba(15,23,42,0.04);
+  --nt-action-border:  rgba(15,23,42,0.10);
 `
 
 // Dark mode — applied via `@media (prefers-color-scheme: dark)`

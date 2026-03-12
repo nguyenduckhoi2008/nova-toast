@@ -1,6 +1,6 @@
 {
   "name": "@nguyenkhoidev208/nova-toast",
-  "version": "4.3.1",
+  "version": "4.3.3",
   "description": "Lightweight toast notifications for React, Vue, Next, Nuxt — zero dependencies, animated, fully configurable",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -258,12 +258,12 @@ export function ToastItem({ toast, duration, config, onRemove }: ToastItemProps)
           display: 'flex',
           alignItems: 'flex-start',
           gap: 10,
-          padding: '12px 12px 12px 14px',
+          padding: '12px 12px 12px 16px',
           borderRadius: 16,
           backgroundColor: 'var(--nt-bg)',
           color: 'var(--nt-fg)',
-          border: `1px solid ${accent}35`,
-          boxShadow: `var(--nt-shadow), 0 0 0 1px ${accent}10`,
+          border: `1px solid var(--nt-border)`,
+          boxShadow: `var(--nt-shadow), inset 0 0 0 1px ${accent}08`,
           fontSize: 14,
           lineHeight: 1.45,
           pointerEvents: 'auto',
@@ -279,6 +279,18 @@ export function ToastItem({ toast, duration, config, onRemove }: ToastItemProps)
         } as React.CSSProperties
       }
     >
+      {/* Accent bar */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: 3,
+          height: '100%',
+          background: `linear-gradient(to bottom, ${accent}, ${accent}60)`,
+          borderRadius: '16px 0 0 16px'
+        }}
+      />
       {/* Content */}
       <div style={{ flex: 1, minWidth: 0 }}>
         {/* Title row — icon inline before title */}
@@ -292,7 +304,7 @@ export function ToastItem({ toast, duration, config, onRemove }: ToastItemProps)
               alignItems: 'center',
               justifyContent: 'center',
               flexShrink: 0,
-              backgroundColor: `${accent}18`,
+              backgroundColor: `${accent}14`,
               color: accent
             }}
           >
